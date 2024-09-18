@@ -51,12 +51,11 @@ export default function Ponydle() {
         ponyDatabase.forEach(pony => {
             if(pony['name'] === name) {
                 chosenPony = pony;
-                console.log(pony);
                 setGuesses([...guesses, pony])
             }
         });
 
-        const currGuessArray = [getNameColour(chosenPony.name),getColour(chosenPony.colour), getAge(chosenPony.birthYear),getDamColour(chosenPony.dam),getSireColour(chosenPony.sire)]
+        const currGuessArray = [getNameColour(chosenPony.name),getColour(chosenPony.colour), getAge(chosenPony.birthYear),getDamColour(chosenPony),getSireColour(chosenPony)]
 
         setGuessArray([...guessArray,currGuessArray]) 
     }
@@ -97,8 +96,6 @@ export default function Ponydle() {
     }
 
     const getDamColour = (guess:Pony) => {
-        console.log(guess);
-        console.log(answerPony);
         if(guess.dam === answerPony?.dam) {
             return 'green-background';
         }
@@ -148,7 +145,7 @@ export default function Ponydle() {
             </div>
             <div className="visual-section">
                 <div className="guesses">
-                    {guesses[guesses.length-1].name === answerPony?.name ? <h3>Congrats!!!</h3>:<h3>Guesses</h3>}
+                    {guesses.length>0 && guesses[guesses.length-1].name === answerPony?.name ? <h3>Congrats!!!</h3>:<h3>Guesses</h3>}
                     
                     <div className="headings">
                         <div className="heading">Name</div>
