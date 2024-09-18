@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Ponydle/static/css/main.f3f73dea.css",
+    "main.css": "/Ponydle/static/css/main.71d6727d.css",
     "main.js": "/Ponydle/static/js/main.0dacd945.js",
     "static/js/453.6d7c2bd9.chunk.js": "/Ponydle/static/js/453.6d7c2bd9.chunk.js",
     "index.html": "/Ponydle/index.html",
-    "main.f3f73dea.css.map": "/Ponydle/static/css/main.f3f73dea.css.map",
+    "main.71d6727d.css.map": "/Ponydle/static/css/main.71d6727d.css.map",
     "main.0dacd945.js.map": "/Ponydle/static/js/main.0dacd945.js.map",
     "453.6d7c2bd9.chunk.js.map": "/Ponydle/static/js/453.6d7c2bd9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f3f73dea.css",
+    "static/css/main.71d6727d.css",
     "static/js/main.0dacd945.js"
   ]
 }
