@@ -1,0 +1,82 @@
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-section {
+    display: flex;
+    flex-direction: row;
+    flex-grow: inherit;
+    column-gap: 30px;
+    justify-content: center;
+}
+
+.input {
+    width: 30vh;
+}
+
+.result {
+    display: flex;
+    flex-direction: row;
+    flex-grow: inherit;
+    column-gap: 30px;
+    justify-content: center;
+}
+
+.guesses {
+    display: flex;
+    flex-direction: column;
+    flex-grow: inherit;
+    row-gap: 10px;
+    justify-content: center;
+}
+
+.guess-row {
+    display: flex;
+    flex-direction: row;
+    flex-grow: inherit;
+}
+
+[class^="guess-property"] {
+    width: 20%;
+    background-color: rgb(233, 234, 236);
+    margin:2px;
+    padding:5px;
+    height:10vh;
+    align-content: center;
+    text-align: center;
+}
+
+.headings {
+    display: flex;
+    flex-direction: row;
+    flex-grow: inherit;
+}
+
+.heading {
+    width: 20%;
+    margin:2px;
+    padding:5px;
+    height:5vh;
+    align-content: center;
+    text-align: center;
+}
+
+.guess-section {
+    overflow-y: scroll;
+    height: 50vh;
+}
+
+.green-background {
+    background-color: rgb(192, 238, 183);
+}
+
+.yellow-background {
+    background-color: rgb(230, 231, 169);
+}
+
+.red-background {
+    background-color: rgb(233, 177, 177);
+}
+
+
